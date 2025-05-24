@@ -8,3 +8,5 @@ plotly
 Flask
 dash
 dash-bootstrap-components
+seaborn
+faker
