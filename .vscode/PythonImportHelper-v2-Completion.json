@@ -1,0 +1,713 @@
+[
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.express",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.express",
+        "description": "plotly.express",
+        "detail": "plotly.express",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "altair",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "altair",
+        "description": "altair",
+        "detail": "altair",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.graph_objects",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.graph_objects",
+        "description": "plotly.graph_objects",
+        "detail": "plotly.graph_objects",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "faker",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "faker",
+        "description": "faker",
+        "detail": "faker",
+        "documentation": {}
+    },
+    {
+        "label": "Faker",
+        "importPath": "faker",
+        "description": "faker",
+        "isExtraImport": true,
+        "detail": "faker",
+        "documentation": {}
+    },
+    {
+        "label": "IsolationForest",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template_string",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "login_user",
+        "kind": 2,
+        "importPath": "pages.6_Login",
+        "description": "pages.6_Login",
+        "peekOfCode": "def login_user(username, password):\n    return USER_CREDENTIALS.get(username) == password\n# --- Session State to Track Login ---\nif \"authenticated\" not in st.session_state:\n    st.session_state[\"authenticated\"] = False\nif \"username\" not in st.session_state:\n    st.session_state[\"username\"] = \"\"\n# --- Login UI ---\nif not st.session_state[\"authenticated\"]:\n    st.markdown(\"<h2 style='text-align:center;'>🔐 Login to AI-Solutions Dashboard</h2>\", unsafe_allow_html=True)",
+        "detail": "pages.6_Login",
+        "documentation": {}
+    },
+    {
+        "label": "USER_CREDENTIALS",
+        "kind": 5,
+        "importPath": "pages.6_Login",
+        "description": "pages.6_Login",
+        "peekOfCode": "USER_CREDENTIALS = {\n    \"admin\": \"admin123\",\n    \"manager\": \"sales2025\",\n    \"Ofentse\": \"Hosia26\",\n    \"Otlaarobala\": \"Otlaajaeng1\",\n    \"bida21-068\": \"Analogous@26\"\n}\ndef login_user(username, password):\n    return USER_CREDENTIALS.get(username) == password\n# --- Session State to Track Login ---",
+        "detail": "pages.6_Login",
+        "documentation": {}
+    },
+    {
+        "label": "dates",
+        "kind": 5,
+        "importPath": "pages.Anomaly_Detection",
+        "description": "pages.Anomaly_Detection",
+        "peekOfCode": "dates = pd.date_range(end=datetime.today(), periods=100).to_pydatetime().tolist()\nsales = np.random.normal(loc=5000, scale=1500, size=100).astype(int)\nsales[15] = 15000  # High anomaly\nsales[33] = 800    # Low anomaly\ndf = pd.DataFrame({\"Date\": dates, \"Sales\": sales})\ndf[\"Rolling_Mean\"] = df[\"Sales\"].rolling(window=7).mean()\ndf[\"Rolling_Std\"] = df[\"Sales\"].rolling(window=7).std()\ndf[\"Anomaly\"] = ((df[\"Sales\"] > df[\"Rolling_Mean\"] + 2 * df[\"Rolling_Std\"]) |\n                 (df[\"Sales\"] < df[\"Rolling_Mean\"] - 2 * df[\"Rolling_Std\"]))\n# --- Visualization ---",
+        "detail": "pages.Anomaly_Detection",
+        "documentation": {}
+    },
+    {
+        "label": "sales",
+        "kind": 5,
+        "importPath": "pages.Anomaly_Detection",
+        "description": "pages.Anomaly_Detection",
+        "peekOfCode": "sales = np.random.normal(loc=5000, scale=1500, size=100).astype(int)\nsales[15] = 15000  # High anomaly\nsales[33] = 800    # Low anomaly\ndf = pd.DataFrame({\"Date\": dates, \"Sales\": sales})\ndf[\"Rolling_Mean\"] = df[\"Sales\"].rolling(window=7).mean()\ndf[\"Rolling_Std\"] = df[\"Sales\"].rolling(window=7).std()\ndf[\"Anomaly\"] = ((df[\"Sales\"] > df[\"Rolling_Mean\"] + 2 * df[\"Rolling_Std\"]) |\n                 (df[\"Sales\"] < df[\"Rolling_Mean\"] - 2 * df[\"Rolling_Std\"]))\n# --- Visualization ---\nfig = px.line(df, x=\"Date\", y=\"Sales\", title=\"Sales Over Time with Anomalies\", markers=True)",
+        "detail": "pages.Anomaly_Detection",
+        "documentation": {}
+    },
+    {
+        "label": "sales[15]",
+        "kind": 5,
+        "importPath": "pages.Anomaly_Detection",
+        "description": "pages.Anomaly_Detection",
+        "peekOfCode": "sales[15] = 15000  # High anomaly\nsales[33] = 800    # Low anomaly\ndf = pd.DataFrame({\"Date\": dates, \"Sales\": sales})\ndf[\"Rolling_Mean\"] = df[\"Sales\"].rolling(window=7).mean()\ndf[\"Rolling_Std\"] = df[\"Sales\"].rolling(window=7).std()\ndf[\"Anomaly\"] = ((df[\"Sales\"] > df[\"Rolling_Mean\"] + 2 * df[\"Rolling_Std\"]) |\n                 (df[\"Sales\"] < df[\"Rolling_Mean\"] - 2 * df[\"Rolling_Std\"]))\n# --- Visualization ---\nfig = px.line(df, x=\"Date\", y=\"Sales\", title=\"Sales Over Time with Anomalies\", markers=True)\nanomaly_points = df[df[\"Anomaly\"]]",
+        "detail": "pages.Anomaly_Detection",
+        "documentation": {}
+    },
+    {
+        "label": "sales[33]",
+        "kind": 5,
+        "importPath": "pages.Anomaly_Detection",
+        "description": "pages.Anomaly_Detection",
+        "peekOfCode": "sales[33] = 800    # Low anomaly\ndf = pd.DataFrame({\"Date\": dates, \"Sales\": sales})\ndf[\"Rolling_Mean\"] = df[\"Sales\"].rolling(window=7).mean()\ndf[\"Rolling_Std\"] = df[\"Sales\"].rolling(window=7).std()\ndf[\"Anomaly\"] = ((df[\"Sales\"] > df[\"Rolling_Mean\"] + 2 * df[\"Rolling_Std\"]) |\n                 (df[\"Sales\"] < df[\"Rolling_Mean\"] - 2 * df[\"Rolling_Std\"]))\n# --- Visualization ---\nfig = px.line(df, x=\"Date\", y=\"Sales\", title=\"Sales Over Time with Anomalies\", markers=True)\nanomaly_points = df[df[\"Anomaly\"]]\nfig.add_scatter(x=anomaly_points[\"Date\"], y=anomaly_points[\"Sales\"], mode='markers',",
+        "detail": "pages.Anomaly_Detection",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pages.Anomaly_Detection",
+        "description": "pages.Anomaly_Detection",
+        "peekOfCode": "df = pd.DataFrame({\"Date\": dates, \"Sales\": sales})\ndf[\"Rolling_Mean\"] = df[\"Sales\"].rolling(window=7).mean()\ndf[\"Rolling_Std\"] = df[\"Sales\"].rolling(window=7).std()\ndf[\"Anomaly\"] = ((df[\"Sales\"] > df[\"Rolling_Mean\"] + 2 * df[\"Rolling_Std\"]) |\n                 (df[\"Sales\"] < df[\"Rolling_Mean\"] - 2 * df[\"Rolling_Std\"]))\n# --- Visualization ---\nfig = px.line(df, x=\"Date\", y=\"Sales\", title=\"Sales Over Time with Anomalies\", markers=True)\nanomaly_points = df[df[\"Anomaly\"]]\nfig.add_scatter(x=anomaly_points[\"Date\"], y=anomaly_points[\"Sales\"], mode='markers',\n                marker=dict(color='red', size=10, symbol='x'), name='Anomaly')",
+        "detail": "pages.Anomaly_Detection",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"Rolling_Mean\"]",
+        "kind": 5,
+        "importPath": "pages.Anomaly_Detection",
+        "description": "pages.Anomaly_Detection",
+        "peekOfCode": "df[\"Rolling_Mean\"] = df[\"Sales\"].rolling(window=7).mean()\ndf[\"Rolling_Std\"] = df[\"Sales\"].rolling(window=7).std()\ndf[\"Anomaly\"] = ((df[\"Sales\"] > df[\"Rolling_Mean\"] + 2 * df[\"Rolling_Std\"]) |\n                 (df[\"Sales\"] < df[\"Rolling_Mean\"] - 2 * df[\"Rolling_Std\"]))\n# --- Visualization ---\nfig = px.line(df, x=\"Date\", y=\"Sales\", title=\"Sales Over Time with Anomalies\", markers=True)\nanomaly_points = df[df[\"Anomaly\"]]\nfig.add_scatter(x=anomaly_points[\"Date\"], y=anomaly_points[\"Sales\"], mode='markers',\n                marker=dict(color='red', size=10, symbol='x'), name='Anomaly')\nfig.update_layout(height=250)",
+        "detail": "pages.Anomaly_Detection",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"Rolling_Std\"]",
+        "kind": 5,
+        "importPath": "pages.Anomaly_Detection",
+        "description": "pages.Anomaly_Detection",
+        "peekOfCode": "df[\"Rolling_Std\"] = df[\"Sales\"].rolling(window=7).std()\ndf[\"Anomaly\"] = ((df[\"Sales\"] > df[\"Rolling_Mean\"] + 2 * df[\"Rolling_Std\"]) |\n                 (df[\"Sales\"] < df[\"Rolling_Mean\"] - 2 * df[\"Rolling_Std\"]))\n# --- Visualization ---\nfig = px.line(df, x=\"Date\", y=\"Sales\", title=\"Sales Over Time with Anomalies\", markers=True)\nanomaly_points = df[df[\"Anomaly\"]]\nfig.add_scatter(x=anomaly_points[\"Date\"], y=anomaly_points[\"Sales\"], mode='markers',\n                marker=dict(color='red', size=10, symbol='x'), name='Anomaly')\nfig.update_layout(height=250)\nst.plotly_chart(fig, use_container_width=True)",
+        "detail": "pages.Anomaly_Detection",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"Anomaly\"]",
+        "kind": 5,
+        "importPath": "pages.Anomaly_Detection",
+        "description": "pages.Anomaly_Detection",
+        "peekOfCode": "df[\"Anomaly\"] = ((df[\"Sales\"] > df[\"Rolling_Mean\"] + 2 * df[\"Rolling_Std\"]) |\n                 (df[\"Sales\"] < df[\"Rolling_Mean\"] - 2 * df[\"Rolling_Std\"]))\n# --- Visualization ---\nfig = px.line(df, x=\"Date\", y=\"Sales\", title=\"Sales Over Time with Anomalies\", markers=True)\nanomaly_points = df[df[\"Anomaly\"]]\nfig.add_scatter(x=anomaly_points[\"Date\"], y=anomaly_points[\"Sales\"], mode='markers',\n                marker=dict(color='red', size=10, symbol='x'), name='Anomaly')\nfig.update_layout(height=250)\nst.plotly_chart(fig, use_container_width=True)\n# --- Display anomalies ---",
+        "detail": "pages.Anomaly_Detection",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "pages.Anomaly_Detection",
+        "description": "pages.Anomaly_Detection",
+        "peekOfCode": "fig = px.line(df, x=\"Date\", y=\"Sales\", title=\"Sales Over Time with Anomalies\", markers=True)\nanomaly_points = df[df[\"Anomaly\"]]\nfig.add_scatter(x=anomaly_points[\"Date\"], y=anomaly_points[\"Sales\"], mode='markers',\n                marker=dict(color='red', size=10, symbol='x'), name='Anomaly')\nfig.update_layout(height=250)\nst.plotly_chart(fig, use_container_width=True)\n# --- Display anomalies ---\nst.markdown(\"**⚠️ Detected Anomalies**\")\nif anomaly_points.empty:\n    st.success(\"No anomalies detected in the recent data.\")",
+        "detail": "pages.Anomaly_Detection",
+        "documentation": {}
+    },
+    {
+        "label": "anomaly_points",
+        "kind": 5,
+        "importPath": "pages.Anomaly_Detection",
+        "description": "pages.Anomaly_Detection",
+        "peekOfCode": "anomaly_points = df[df[\"Anomaly\"]]\nfig.add_scatter(x=anomaly_points[\"Date\"], y=anomaly_points[\"Sales\"], mode='markers',\n                marker=dict(color='red', size=10, symbol='x'), name='Anomaly')\nfig.update_layout(height=250)\nst.plotly_chart(fig, use_container_width=True)\n# --- Display anomalies ---\nst.markdown(\"**⚠️ Detected Anomalies**\")\nif anomaly_points.empty:\n    st.success(\"No anomalies detected in the recent data.\")\nelse:",
+        "detail": "pages.Anomaly_Detection",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "kind": 2,
+        "importPath": "1_Dashboard",
+        "description": "1_Dashboard",
+        "peekOfCode": "def load_data():\n    df = pd.read_csv(\"data/cleaned_ai_solutions_web_server_logs.csv\", parse_dates=['Date', 'Subscription_End_Date'])\n    df['Hour'] = pd.to_datetime(df['Time'],  format='%H:%M:%S', errors='coerce').dt.hour.fillna(0).astype(int)\n    df['Day'] = df['Date'].dt.day_name()\n    df['Week'] = df['Date'].dt.to_period('W').apply(lambda r: r.start_time)\n    return df\ndf = load_data()\ntabs = st.tabs([\n    \"📊 Dashboard\", \"📈 Sales Performance\", \"💹KPIs\", \"👥 Customer Insights\", \"🧠 AI Recommendations\",\n    \"📣 Marketing\", \"📋 Leads\", \"💰 Finance\", \"🚨 Anomalies\", \"📄 Reports\", \"🌐 Live Traffic\"",
+        "detail": "1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "1_Dashboard",
+        "description": "1_Dashboard",
+        "peekOfCode": "df = load_data()\ntabs = st.tabs([\n    \"📊 Dashboard\", \"📈 Sales Performance\", \"💹KPIs\", \"👥 Customer Insights\", \"🧠 AI Recommendations\",\n    \"📣 Marketing\", \"📋 Leads\", \"💰 Finance\", \"🚨 Anomalies\", \"📄 Reports\", \"🌐 Live Traffic\"\n])\n# --- TAB 1: Dashboard Overview ---\nwith tabs[0]:\n    # --- Sidebar filters ---\n    st.sidebar.header(\"Filters\")\n    view_mode = st.sidebar.radio(\"View Mode\", [\"Sales Team\", \"Sales Person\"])",
+        "detail": "1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "tabs",
+        "kind": 5,
+        "importPath": "1_Dashboard",
+        "description": "1_Dashboard",
+        "peekOfCode": "tabs = st.tabs([\n    \"📊 Dashboard\", \"📈 Sales Performance\", \"💹KPIs\", \"👥 Customer Insights\", \"🧠 AI Recommendations\",\n    \"📣 Marketing\", \"📋 Leads\", \"💰 Finance\", \"🚨 Anomalies\", \"📄 Reports\", \"🌐 Live Traffic\"\n])\n# --- TAB 1: Dashboard Overview ---\nwith tabs[0]:\n    # --- Sidebar filters ---\n    st.sidebar.header(\"Filters\")\n    view_mode = st.sidebar.radio(\"View Mode\", [\"Sales Team\", \"Sales Person\"])\n    start_date, end_date = st.sidebar.date_input(\"Date Range\", [df['Date'].min(), df['Date'].max()])",
+        "detail": "1_Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "generate_log_entry",
+        "kind": 2,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "def generate_log_entry():\n    random_days = random.randint(0, time_difference.days)\n    random_datetime = start_date + timedelta(days=random_days, seconds=random.randint(0, 86399))\n    time_str = random_datetime.time().strftime(\"%H:%M:%S\")\n    date_str = random_datetime.date().strftime(\"%Y-%m-%d\")\n    ip_block = random.choice(ip_blocks)\n    ip = f\"{ip_block}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)}\"\n    country, cities = country_city_map[ip_block]\n    city = random.choice(cities)\n    method = random.choice(http_methods)",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "fake",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "fake = Faker()\nrandom.seed(42)\nnp.random.seed(42)\nnum_records = 656_219 # Keeping the original number of records\ndata_dir = 'data'\nos.makedirs(data_dir, exist_ok=True)\n# Static options\nresources = [\n    (\"/index.html\", \"Home View\"),\n    (\"/jobs/placejob.php\", \"Job Placement\"), # Assuming AI-Solutions also lists jobs or their software helps with this",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "num_records",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "num_records = 656_219 # Keeping the original number of records\ndata_dir = 'data'\nos.makedirs(data_dir, exist_ok=True)\n# Static options\nresources = [\n    (\"/index.html\", \"Home View\"),\n    (\"/jobs/placejob.php\", \"Job Placement\"), # Assuming AI-Solutions also lists jobs or their software helps with this\n    (\"/jobs/viewjob.php\", \"Job View\"),\n    (\"/scheduledemo.php\", \"Schedule Demo\"),\n    (\"/prototype.php\", \"Prototype Request\"), # Could link to AI Prototyping Toolkit or Custom Dev",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "data_dir",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "data_dir = 'data'\nos.makedirs(data_dir, exist_ok=True)\n# Static options\nresources = [\n    (\"/index.html\", \"Home View\"),\n    (\"/jobs/placejob.php\", \"Job Placement\"), # Assuming AI-Solutions also lists jobs or their software helps with this\n    (\"/jobs/viewjob.php\", \"Job View\"),\n    (\"/scheduledemo.php\", \"Schedule Demo\"),\n    (\"/prototype.php\", \"Prototype Request\"), # Could link to AI Prototyping Toolkit or Custom Dev\n    (\"/virtualassistant.php\", \"AI Assistant Request\"), # Direct request for the VA",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "resources",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "resources = [\n    (\"/index.html\", \"Home View\"),\n    (\"/jobs/placejob.php\", \"Job Placement\"), # Assuming AI-Solutions also lists jobs or their software helps with this\n    (\"/jobs/viewjob.php\", \"Job View\"),\n    (\"/scheduledemo.php\", \"Schedule Demo\"),\n    (\"/prototype.php\", \"Prototype Request\"), # Could link to AI Prototyping Toolkit or Custom Dev\n    (\"/virtualassistant.php\", \"AI Assistant Request\"), # Direct request for the VA\n    (\"/event.php\", \"Event Info\"), # Company events or webinars\n    (\"/images/logo.png\", \"Static Asset\"),\n    (\"/solutions/dex.html\", \"DEX Platform Info\"),",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "http_methods",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "http_methods = [\"GET\", \"POST\"]\nstatus_codes = [200, 200, 200, 304, 404, 500] # 200 more frequent\ndevice_types = [\"Desktop\", \"Mobile\", \"Tablet\"]\nuser_types = [\"New\", \"Returning\"]\nuser_agents = [\n    \"Mozilla/5.0 (Windows NT 10.0; Win64; x64)\",\n    \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)\",\n    \"Mozilla/5.0 (Linux; Android 11)\",\n    \"Mozilla/5.0 (iPhone; CPU iPhone OS 14_0)\",\n    \"Mozilla/5.0 (iPad; CPU OS 13_6_1)\"",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "status_codes",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "status_codes = [200, 200, 200, 304, 404, 500] # 200 more frequent\ndevice_types = [\"Desktop\", \"Mobile\", \"Tablet\"]\nuser_types = [\"New\", \"Returning\"]\nuser_agents = [\n    \"Mozilla/5.0 (Windows NT 10.0; Win64; x64)\",\n    \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)\",\n    \"Mozilla/5.0 (Linux; Android 11)\",\n    \"Mozilla/5.0 (iPhone; CPU iPhone OS 14_0)\",\n    \"Mozilla/5.0 (iPad; CPU OS 13_6_1)\"\n]",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "device_types",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "device_types = [\"Desktop\", \"Mobile\", \"Tablet\"]\nuser_types = [\"New\", \"Returning\"]\nuser_agents = [\n    \"Mozilla/5.0 (Windows NT 10.0; Win64; x64)\",\n    \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)\",\n    \"Mozilla/5.0 (Linux; Android 11)\",\n    \"Mozilla/5.0 (iPhone; CPU iPhone OS 14_0)\",\n    \"Mozilla/5.0 (iPad; CPU OS 13_6_1)\"\n]\nbrowsers = [\"Chrome\", \"Firefox\", \"Safari\", \"Edge\", \"Opera\"]",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "user_types",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "user_types = [\"New\", \"Returning\"]\nuser_agents = [\n    \"Mozilla/5.0 (Windows NT 10.0; Win64; x64)\",\n    \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)\",\n    \"Mozilla/5.0 (Linux; Android 11)\",\n    \"Mozilla/5.0 (iPhone; CPU iPhone OS 14_0)\",\n    \"Mozilla/5.0 (iPad; CPU OS 13_6_1)\"\n]\nbrowsers = [\"Chrome\", \"Firefox\", \"Safari\", \"Edge\", \"Opera\"]\ncampaign_sources_list = [\"Email\", \"LinkedIn Ads\", \"Google Ads\", \"Organic Search\", \"Direct\", \"Referral Program\", \"Social Media\", \"Webinar\"]",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "user_agents",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "user_agents = [\n    \"Mozilla/5.0 (Windows NT 10.0; Win64; x64)\",\n    \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)\",\n    \"Mozilla/5.0 (Linux; Android 11)\",\n    \"Mozilla/5.0 (iPhone; CPU iPhone OS 14_0)\",\n    \"Mozilla/5.0 (iPad; CPU OS 13_6_1)\"\n]\nbrowsers = [\"Chrome\", \"Firefox\", \"Safari\", \"Edge\", \"Opera\"]\ncampaign_sources_list = [\"Email\", \"LinkedIn Ads\", \"Google Ads\", \"Organic Search\", \"Direct\", \"Referral Program\", \"Social Media\", \"Webinar\"]\njob_categories = [\"Software Engineering\", \"AI Research\", \"Sales\", \"Marketing\", \"Product Management\", \"HR\", \"N/A\"] # Relevant job roles",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "browsers",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "browsers = [\"Chrome\", \"Firefox\", \"Safari\", \"Edge\", \"Opera\"]\ncampaign_sources_list = [\"Email\", \"LinkedIn Ads\", \"Google Ads\", \"Organic Search\", \"Direct\", \"Referral Program\", \"Social Media\", \"Webinar\"]\njob_categories = [\"Software Engineering\", \"AI Research\", \"Sales\", \"Marketing\", \"Product Management\", \"HR\", \"N/A\"] # Relevant job roles\n# MODIFIED SECTION STARTS HERE\n# Products/Services for AI-Solutions\nai_solutions_products = [\n    \"DEX Platform Subscription\",\n    \"AI Virtual Assistant License\",\n    \"AI Prototyping Toolkit\",\n    \"Custom AI Solution Development\",",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "campaign_sources_list",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "campaign_sources_list = [\"Email\", \"LinkedIn Ads\", \"Google Ads\", \"Organic Search\", \"Direct\", \"Referral Program\", \"Social Media\", \"Webinar\"]\njob_categories = [\"Software Engineering\", \"AI Research\", \"Sales\", \"Marketing\", \"Product Management\", \"HR\", \"N/A\"] # Relevant job roles\n# MODIFIED SECTION STARTS HERE\n# Products/Services for AI-Solutions\nai_solutions_products = [\n    \"DEX Platform Subscription\",\n    \"AI Virtual Assistant License\",\n    \"AI Prototyping Toolkit\",\n    \"Custom AI Solution Development\",\n    \"Innovation Accelerator Program\",",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "job_categories",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "job_categories = [\"Software Engineering\", \"AI Research\", \"Sales\", \"Marketing\", \"Product Management\", \"HR\", \"N/A\"] # Relevant job roles\n# MODIFIED SECTION STARTS HERE\n# Products/Services for AI-Solutions\nai_solutions_products = [\n    \"DEX Platform Subscription\",\n    \"AI Virtual Assistant License\",\n    \"AI Prototyping Toolkit\",\n    \"Custom AI Solution Development\",\n    \"Innovation Accelerator Program\",\n    \"DEX Analytics Suite\",",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "ai_solutions_products",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "ai_solutions_products = [\n    \"DEX Platform Subscription\",\n    \"AI Virtual Assistant License\",\n    \"AI Prototyping Toolkit\",\n    \"Custom AI Solution Development\",\n    \"Innovation Accelerator Program\",\n    \"DEX Analytics Suite\",\n    \"Proactive Issue Resolution Service\",\n    \"Enterprise Support & Training Package\"\n]",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "payment_frequencies",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "payment_frequencies = [\"Monthly Subscription\", \"Annual Subscription\", \"One-Time Purchase\", \"Quarterly Subscription\"]\n# MODIFIED SECTION ENDS HERE\nstart_date = datetime(2020, 1, 1)\nend_date = datetime(2025, 5, 10) # Assuming current date for generation up to recent past\ntime_difference = end_date - start_date\n# Countries & cities\ncountry_city_map = {\n    \"128\": (\"UK\", [\"London\", \"Manchester\", \"Birmingham\", \"Sunderland\"]), # Added Sunderland\n    \"155\": (\"USA\", [\"New York\", \"San Francisco\", \"Chicago\", \"Austin\"]),\n    \"157\": (\"Germany\", [\"Berlin\", \"Munich\", \"Hamburg\", \"Frankfurt\"]),",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "start_date",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "start_date = datetime(2020, 1, 1)\nend_date = datetime(2025, 5, 10) # Assuming current date for generation up to recent past\ntime_difference = end_date - start_date\n# Countries & cities\ncountry_city_map = {\n    \"128\": (\"UK\", [\"London\", \"Manchester\", \"Birmingham\", \"Sunderland\"]), # Added Sunderland\n    \"155\": (\"USA\", [\"New York\", \"San Francisco\", \"Chicago\", \"Austin\"]),\n    \"157\": (\"Germany\", [\"Berlin\", \"Munich\", \"Hamburg\", \"Frankfurt\"]),\n    \"158\": (\"India\", [\"Mumbai\", \"Delhi\", \"Bangalore\", \"Hyderabad\"]),\n    \"159\": (\"Canada\", [\"Toronto\", \"Vancouver\", \"Montreal\", \"Ottawa\"])",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "end_date",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "end_date = datetime(2025, 5, 10) # Assuming current date for generation up to recent past\ntime_difference = end_date - start_date\n# Countries & cities\ncountry_city_map = {\n    \"128\": (\"UK\", [\"London\", \"Manchester\", \"Birmingham\", \"Sunderland\"]), # Added Sunderland\n    \"155\": (\"USA\", [\"New York\", \"San Francisco\", \"Chicago\", \"Austin\"]),\n    \"157\": (\"Germany\", [\"Berlin\", \"Munich\", \"Hamburg\", \"Frankfurt\"]),\n    \"158\": (\"India\", [\"Mumbai\", \"Delhi\", \"Bangalore\", \"Hyderabad\"]),\n    \"159\": (\"Canada\", [\"Toronto\", \"Vancouver\", \"Montreal\", \"Ottawa\"])\n}",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "time_difference",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "time_difference = end_date - start_date\n# Countries & cities\ncountry_city_map = {\n    \"128\": (\"UK\", [\"London\", \"Manchester\", \"Birmingham\", \"Sunderland\"]), # Added Sunderland\n    \"155\": (\"USA\", [\"New York\", \"San Francisco\", \"Chicago\", \"Austin\"]),\n    \"157\": (\"Germany\", [\"Berlin\", \"Munich\", \"Hamburg\", \"Frankfurt\"]),\n    \"158\": (\"India\", [\"Mumbai\", \"Delhi\", \"Bangalore\", \"Hyderabad\"]),\n    \"159\": (\"Canada\", [\"Toronto\", \"Vancouver\", \"Montreal\", \"Ottawa\"])\n}\nip_blocks = list(country_city_map.keys())",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "country_city_map",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "country_city_map = {\n    \"128\": (\"UK\", [\"London\", \"Manchester\", \"Birmingham\", \"Sunderland\"]), # Added Sunderland\n    \"155\": (\"USA\", [\"New York\", \"San Francisco\", \"Chicago\", \"Austin\"]),\n    \"157\": (\"Germany\", [\"Berlin\", \"Munich\", \"Hamburg\", \"Frankfurt\"]),\n    \"158\": (\"India\", [\"Mumbai\", \"Delhi\", \"Bangalore\", \"Hyderabad\"]),\n    \"159\": (\"Canada\", [\"Toronto\", \"Vancouver\", \"Montreal\", \"Ottawa\"])\n}\nip_blocks = list(country_city_map.keys())\n# Team & salesperson structure\nteams = {",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "ip_blocks",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "ip_blocks = list(country_city_map.keys())\n# Team & salesperson structure\nteams = {\n    \"North Europe\": [fake.name() for _ in range(5)], # Example regional teams\n    \"Americas\": [fake.name() for _ in range(5)],\n    \"DACH\": [fake.name() for _ in range(5)], # Germany, Austria, Switzerland\n    \"APAC\": [fake.name() for _ in range(5)]\n}\nteam_names = list(teams.keys())\n# Generator function",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "teams",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "teams = {\n    \"North Europe\": [fake.name() for _ in range(5)], # Example regional teams\n    \"Americas\": [fake.name() for _ in range(5)],\n    \"DACH\": [fake.name() for _ in range(5)], # Germany, Austria, Switzerland\n    \"APAC\": [fake.name() for _ in range(5)]\n}\nteam_names = list(teams.keys())\n# Generator function\n# Near the top of `generate_log_entry()`:\ndef generate_log_entry():",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "team_names",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "team_names = list(teams.keys())\n# Generator function\n# Near the top of `generate_log_entry()`:\ndef generate_log_entry():\n    random_days = random.randint(0, time_difference.days)\n    random_datetime = start_date + timedelta(days=random_days, seconds=random.randint(0, 86399))\n    time_str = random_datetime.time().strftime(\"%H:%M:%S\")\n    date_str = random_datetime.date().strftime(\"%Y-%m-%d\")\n    ip_block = random.choice(ip_blocks)\n    ip = f\"{ip_block}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)}\"",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "logs",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "logs = [generate_log_entry() for _ in range(num_records)]\n# Create DataFrame\ncolumns = [\n    \"Time\", \"Date\", \"IP_Address\", \"Country\", \"City\", \"HTTP_Method\", \"Requested_Resource\", \"Action_Type\", \"HTTP_Status_Code\",\n    \"ResponseTime_MS\", \"User_Agent\", \"Device_Type\", \"Browser\", \"Session_ID\", \"Referrer_URL\",\n    \"User_Type\", \"Campaign_Source\", \"Job_Category_Interest\",\"Session_Duration_Minutes\", \"Product_Service_Interest\", \"Deal_Value_USD\", # Renamed ProductPricing\n    \"Payment_Frequency\", \"Subscription_End_Date\", \"Lead_Source\", \"Sales_Team\", \"Sales_Person\"\n]\ndf = pd.DataFrame(logs, columns=columns)\n# Save raw (as CSV for Excel compatibility)",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "columns",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "columns = [\n    \"Time\", \"Date\", \"IP_Address\", \"Country\", \"City\", \"HTTP_Method\", \"Requested_Resource\", \"Action_Type\", \"HTTP_Status_Code\",\n    \"ResponseTime_MS\", \"User_Agent\", \"Device_Type\", \"Browser\", \"Session_ID\", \"Referrer_URL\",\n    \"User_Type\", \"Campaign_Source\", \"Job_Category_Interest\",\"Session_Duration_Minutes\", \"Product_Service_Interest\", \"Deal_Value_USD\", # Renamed ProductPricing\n    \"Payment_Frequency\", \"Subscription_End_Date\", \"Lead_Source\", \"Sales_Team\", \"Sales_Person\"\n]\ndf = pd.DataFrame(logs, columns=columns)\n# Save raw (as CSV for Excel compatibility)\n# The problem mentions \"Excel file (CSV or similar format)\"\nraw_filepath = os.path.join(data_dir, 'ai_solutions_web_server_logs.csv')",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "df = pd.DataFrame(logs, columns=columns)\n# Save raw (as CSV for Excel compatibility)\n# The problem mentions \"Excel file (CSV or similar format)\"\nraw_filepath = os.path.join(data_dir, 'ai_solutions_web_server_logs.csv')\ndf.to_csv(raw_filepath, index=False)\nprint(f\"✅ Raw dataset saved as '{raw_filepath}'\")\n# Clean data\ndf['ResponseTime_MS'] = pd.to_numeric(df['ResponseTime_MS'], errors='coerce').fillna(0)\ndf['HTTP_Status_Code'] = df['HTTP_Status_Code'].astype(int)\ndf['Date'] = pd.to_datetime(df['Date'])",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "raw_filepath",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "raw_filepath = os.path.join(data_dir, 'ai_solutions_web_server_logs.csv')\ndf.to_csv(raw_filepath, index=False)\nprint(f\"✅ Raw dataset saved as '{raw_filepath}'\")\n# Clean data\ndf['ResponseTime_MS'] = pd.to_numeric(df['ResponseTime_MS'], errors='coerce').fillna(0)\ndf['HTTP_Status_Code'] = df['HTTP_Status_Code'].astype(int)\ndf['Date'] = pd.to_datetime(df['Date'])\ndf['Deal_Value_USD'] = pd.to_numeric(df['Deal_Value_USD'], errors='coerce').fillna(0)\n# Convert Subscription_End_Date to datetime, coercing errors for \"N/A\" values\ndf['Subscription_End_Date'] = pd.to_datetime(df['Subscription_End_Date'], errors='coerce')",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "df['ResponseTime_MS']",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "df['ResponseTime_MS'] = pd.to_numeric(df['ResponseTime_MS'], errors='coerce').fillna(0)\ndf['HTTP_Status_Code'] = df['HTTP_Status_Code'].astype(int)\ndf['Date'] = pd.to_datetime(df['Date'])\ndf['Deal_Value_USD'] = pd.to_numeric(df['Deal_Value_USD'], errors='coerce').fillna(0)\n# Convert Subscription_End_Date to datetime, coercing errors for \"N/A\" values\ndf['Subscription_End_Date'] = pd.to_datetime(df['Subscription_End_Date'], errors='coerce')\ndf['Action_Type'] = df['Action_Type'].str.strip().str.lower()\ndf['Referrer_URL'] = df['Referrer_URL'].fillna('Unknown')\ndf['Hour'] = df['Time'].str.split(':').str[0].astype(int)\n# Filter out server errors for cleaned dataset if desired, or handle them",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "df['HTTP_Status_Code']",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "df['HTTP_Status_Code'] = df['HTTP_Status_Code'].astype(int)\ndf['Date'] = pd.to_datetime(df['Date'])\ndf['Deal_Value_USD'] = pd.to_numeric(df['Deal_Value_USD'], errors='coerce').fillna(0)\n# Convert Subscription_End_Date to datetime, coercing errors for \"N/A\" values\ndf['Subscription_End_Date'] = pd.to_datetime(df['Subscription_End_Date'], errors='coerce')\ndf['Action_Type'] = df['Action_Type'].str.strip().str.lower()\ndf['Referrer_URL'] = df['Referrer_URL'].fillna('Unknown')\ndf['Hour'] = df['Time'].str.split(':').str[0].astype(int)\n# Filter out server errors for cleaned dataset if desired, or handle them\n# For this scenario, keeping all data might be useful for analyzing errors too.",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "df['Date']",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "df['Date'] = pd.to_datetime(df['Date'])\ndf['Deal_Value_USD'] = pd.to_numeric(df['Deal_Value_USD'], errors='coerce').fillna(0)\n# Convert Subscription_End_Date to datetime, coercing errors for \"N/A\" values\ndf['Subscription_End_Date'] = pd.to_datetime(df['Subscription_End_Date'], errors='coerce')\ndf['Action_Type'] = df['Action_Type'].str.strip().str.lower()\ndf['Referrer_URL'] = df['Referrer_URL'].fillna('Unknown')\ndf['Hour'] = df['Time'].str.split(':').str[0].astype(int)\n# Filter out server errors for cleaned dataset if desired, or handle them\n# For this scenario, keeping all data might be useful for analyzing errors too.\n# If strict cleaning of unsuccessful requests is needed:",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "df['Deal_Value_USD']",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "df['Deal_Value_USD'] = pd.to_numeric(df['Deal_Value_USD'], errors='coerce').fillna(0)\n# Convert Subscription_End_Date to datetime, coercing errors for \"N/A\" values\ndf['Subscription_End_Date'] = pd.to_datetime(df['Subscription_End_Date'], errors='coerce')\ndf['Action_Type'] = df['Action_Type'].str.strip().str.lower()\ndf['Referrer_URL'] = df['Referrer_URL'].fillna('Unknown')\ndf['Hour'] = df['Time'].str.split(':').str[0].astype(int)\n# Filter out server errors for cleaned dataset if desired, or handle them\n# For this scenario, keeping all data might be useful for analyzing errors too.\n# If strict cleaning of unsuccessful requests is needed:\n# df_cleaned = df[df['HTTP_Status_Code'] < 400].copy()",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "df['Subscription_End_Date']",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "df['Subscription_End_Date'] = pd.to_datetime(df['Subscription_End_Date'], errors='coerce')\ndf['Action_Type'] = df['Action_Type'].str.strip().str.lower()\ndf['Referrer_URL'] = df['Referrer_URL'].fillna('Unknown')\ndf['Hour'] = df['Time'].str.split(':').str[0].astype(int)\n# Filter out server errors for cleaned dataset if desired, or handle them\n# For this scenario, keeping all data might be useful for analyzing errors too.\n# If strict cleaning of unsuccessful requests is needed:\n# df_cleaned = df[df['HTTP_Status_Code'] < 400].copy()\ndf_cleaned = df.copy() # Keeping all records for now, as 404s etc can be insightful\n# Save cleaned",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "df['Action_Type']",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "df['Action_Type'] = df['Action_Type'].str.strip().str.lower()\ndf['Referrer_URL'] = df['Referrer_URL'].fillna('Unknown')\ndf['Hour'] = df['Time'].str.split(':').str[0].astype(int)\n# Filter out server errors for cleaned dataset if desired, or handle them\n# For this scenario, keeping all data might be useful for analyzing errors too.\n# If strict cleaning of unsuccessful requests is needed:\n# df_cleaned = df[df['HTTP_Status_Code'] < 400].copy()\ndf_cleaned = df.copy() # Keeping all records for now, as 404s etc can be insightful\n# Save cleaned\ncleaned_filepath = os.path.join(data_dir, 'cleaned_ai_solutions_web_server_logs.csv')",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "df['Referrer_URL']",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "df['Referrer_URL'] = df['Referrer_URL'].fillna('Unknown')\ndf['Hour'] = df['Time'].str.split(':').str[0].astype(int)\n# Filter out server errors for cleaned dataset if desired, or handle them\n# For this scenario, keeping all data might be useful for analyzing errors too.\n# If strict cleaning of unsuccessful requests is needed:\n# df_cleaned = df[df['HTTP_Status_Code'] < 400].copy()\ndf_cleaned = df.copy() # Keeping all records for now, as 404s etc can be insightful\n# Save cleaned\ncleaned_filepath = os.path.join(data_dir, 'cleaned_ai_solutions_web_server_logs.csv')\ndf_cleaned.to_csv(cleaned_filepath, index=False)",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "df['Hour']",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "df['Hour'] = df['Time'].str.split(':').str[0].astype(int)\n# Filter out server errors for cleaned dataset if desired, or handle them\n# For this scenario, keeping all data might be useful for analyzing errors too.\n# If strict cleaning of unsuccessful requests is needed:\n# df_cleaned = df[df['HTTP_Status_Code'] < 400].copy()\ndf_cleaned = df.copy() # Keeping all records for now, as 404s etc can be insightful\n# Save cleaned\ncleaned_filepath = os.path.join(data_dir, 'cleaned_ai_solutions_web_server_logs.csv')\ndf_cleaned.to_csv(cleaned_filepath, index=False)\nprint(f\"✅ Cleaned dataset saved as '{cleaned_filepath}'\")",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "df_cleaned",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "df_cleaned = df.copy() # Keeping all records for now, as 404s etc can be insightful\n# Save cleaned\ncleaned_filepath = os.path.join(data_dir, 'cleaned_ai_solutions_web_server_logs.csv')\ndf_cleaned.to_csv(cleaned_filepath, index=False)\nprint(f\"✅ Cleaned dataset saved as '{cleaned_filepath}'\")\n# Show sample\nprint(\"\\nSample of the cleaned dataset:\")\nprint(df_cleaned.head())\nprint(f\"\\nValue counts for Product_Service_Interest (Top 10):\")\nprint(df_cleaned['Product_Service_Interest'].value_counts().nlargest(10))",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "cleaned_filepath",
+        "kind": 5,
+        "importPath": "Simulated_data",
+        "description": "Simulated_data",
+        "peekOfCode": "cleaned_filepath = os.path.join(data_dir, 'cleaned_ai_solutions_web_server_logs.csv')\ndf_cleaned.to_csv(cleaned_filepath, index=False)\nprint(f\"✅ Cleaned dataset saved as '{cleaned_filepath}'\")\n# Show sample\nprint(\"\\nSample of the cleaned dataset:\")\nprint(df_cleaned.head())\nprint(f\"\\nValue counts for Product_Service_Interest (Top 10):\")\nprint(df_cleaned['Product_Service_Interest'].value_counts().nlargest(10))\nprint(f\"\\nValue counts for Payment_Frequency (Top 10):\")\nprint(df_cleaned['Payment_Frequency'].value_counts().nlargest(10))",
+        "detail": "Simulated_data",
+        "documentation": {}
+    },
+    {
+        "label": "run_streamlit",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def run_streamlit():\n    \"\"\"Start the Streamlit app as a subprocess.\"\"\"\n    streamlit_script = os.path.join(os.getcwd(), \"1_Dashboard.py\")\n    subprocess.run([sys.executable, \"-m\", \"streamlit\", \"run\", streamlit_script])\n@app.route('/')\ndef home():\n    return render_template_string(HTML_TEMPLATE)\nif __name__ == '__main__':\n    threading.Thread(target=run_streamlit).start()\n    app.run(debug=True, port=8500)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home():\n    return render_template_string(HTML_TEMPLATE)\nif __name__ == '__main__':\n    threading.Thread(target=run_streamlit).start()\n    app.run(debug=True, port=8500)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\n# HTML template to embed Streamlit app\nHTML_TEMPLATE = \"\"\"\n<!DOCTYPE html>\n<html>\n<head></head>\n<header>\n    <title>AI-Solutions Sales Dashboard</title>\n    <style>\n        iframe {",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "HTML_TEMPLATE",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "HTML_TEMPLATE = \"\"\"\n<!DOCTYPE html>\n<html>\n<head></head>\n<header>\n    <title>AI-Solutions Sales Dashboard</title>\n    <style>\n        iframe {\n            position: absolute;\n            top: 0; left: 0;",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "apply_theme_toggle",
+        "kind": 2,
+        "importPath": "theme_utils",
+        "description": "theme_utils",
+        "peekOfCode": "def apply_theme_toggle():\n    theme = \"Dark\" if st.sidebar.toggle(\"🌗 Dark Mode\", value=True) else \"Light\"\n    if theme == \"Dark\":\n        dark_css = \"\"\"<style>/* [Same CSS as above] */</style>\"\"\"\n        st.markdown(dark_css, unsafe_allow_html=True)\n    else:\n        st.markdown(\"<style>body { background-color: #FFFFFF; color: #000000; }</style>\", unsafe_allow_html=True)\n    return theme",
+        "detail": "theme_utils",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def load_data(csv_path=\"data/cleaned_ai_solutions_web_server_logs.csv\"):\n    if not os.path.exists(csv_path):\n        st.error(f\"Data file not found at {csv_path}\")\n        return pd.DataFrame()  # Return empty DataFrame if file is missing\n    df = pd.read_csv(csv_path)\n    # Optional: preprocess datetime, drop NAs, format\n    if 'Date' in df.columns:\n        df['Date'] = pd.to_datetime(df['Date'], errors='coerce')\n    if 'Time' in df.columns:\n        df['Hour'] = pd.to_datetime(df['Time'],  format='%H:%M:%S', errors='coerce').dt.hour.fillna(0).astype(int)",
+        "detail": "utils",
+        "documentation": {}
+    }
+]
