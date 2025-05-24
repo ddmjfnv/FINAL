@@ -2,6 +2,8 @@ import os
 import numpy as np
 import altair as alt
 import pandas as pd
+os.system("pip install sklearn")
+os.system("pip install faker")
 from sklearn.linear_model import LinearRegression
 import plotly.express as px
 import plotly.graph_objects as go
@@ -11,6 +13,7 @@ import faker as Faker
 from sklearn.ensemble import IsolationForest
 from datetime import datetime
 import streamlit as st
+
 
 
 st.set_page_config(page_title="AI-Solutions Dashboard", layout="wide", page_icon="📊")
