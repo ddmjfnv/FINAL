@@ -4,9 +4,9 @@ pandas
 numpy
 scikit-learn
 matplotlib
+seaborn
 plotly
 Flask
 dash
-dash-bootstrap-components
-seaborn
+dash-boostrap-components
 faker
