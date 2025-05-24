@@ -1,9 +1,10 @@
 import os
+os.system("pip install sklearn")
+os.system("pip install faker")
+os.system("pip install -r requirements.txt")
 import numpy as np
 import altair as alt
 import pandas as pd
-os.system("pip install sklearn")
-os.system("pip install faker")
 from sklearn.linear_model import LinearRegression
 import plotly.express as px
 import plotly.graph_objects as go
